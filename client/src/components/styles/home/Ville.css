@@ -1,0 +1,64 @@
+.ville-containber {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 20rem;
+    background-color: var(--main-color);
+}
+
+.ville-containber .ville-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 300px;
+}
+
+.ville-box .ville {
+    position: absolute;
+    color : var(--text-color);
+    padding : 1rem ;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    gap: 0.7rem;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+
+.ville-box .ville-img {
+    width: 100%;
+    transition: 1s ease;
+    height: 300px;
+}
+
+.ville-box:hover .ville-img {
+    transform: scale(1.1);
+}
+
+.ville-box .ville-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0,0.5), var(--third-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.75s ease;
+}
+
+.ville-box:hover .ville-layer {
+    transform: translateY(0);
+}
+
+.ville-layer p {
+    text-decoration: none;
+    color: var(--text-color);
+}

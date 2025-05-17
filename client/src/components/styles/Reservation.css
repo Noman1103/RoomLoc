@@ -1,0 +1,28 @@
+.reservation {
+    padding: 2rem 20rem;
+    background-color: var(--text-color);
+    height: 47rem;
+
+    .table-reservation {
+        width: 100%;
+        color: var(--main-color);
+        text-align: center;
+
+        th:last-child{
+            width: 15%;
+        }
+
+        .button {
+            text-transform: none;
+            margin: 0.2rem;
+
+            &.yes {
+                background-color: var(--main-color);
+            }
+        }
+    }
+    table,th,td {
+        border: 2px solid var(--third-color);
+        border-collapse: collapse;
+    }
+}

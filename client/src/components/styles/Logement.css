@@ -1,0 +1,165 @@
+.logement {
+    padding: 3rem 20rem;
+    background-color: var(--text-color);
+    height: 45rem;
+
+    .info-important {
+        .title {
+            color: var(--main-color);
+            font-size: 24px;
+            font-weight: 700;
+            padding: 1rem;
+        }
+
+        .loc {
+            color: var(--third-color);
+            font-size: 16px;
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 1rem;
+
+        .carousel-box {
+            width: 50%;
+
+            .carousel-root {
+                background-color: var(--second-color);
+                padding: 1rem 1rem 0;
+                border-radius: .2rem;
+        
+                .carousel{
+                    .thumb {
+                        border: 3px solid var(--text-color);
+                    }
+        
+                    .thumb.selected,.thumb:hover {
+                        border: 3px solid var(--third-color);
+                    }
+        
+                    .slide img {
+                        max-width: 100%;
+                        height: 25rem;
+                    }
+                }
+            }
+        }
+
+        .info-secondaire {
+            width: 50%;
+
+            .info-container {
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+    
+                .info-box {
+                    padding: 1rem;
+                    margin: 1rem;
+                    border: 2px solid var(--third-color);
+                    border-radius: .5rem;
+                    color: var(--main-color);
+                    font-weight: 600;
+    
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+
+                        svg {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+    
+            .description {
+                padding: 1rem;
+                background-color: var(--main-color);
+                color: var(--text-color);
+                border-radius: .5rem;
+            }
+
+            .info-third {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                margin: 2rem;
+
+                .button {
+                    display: grid;
+
+                    .button-loc {
+                        background-color: var(--third-color);
+                        padding: 1rem;
+                        margin-bottom: 2rem;
+                        width: 20rem;
+                    }
+    
+                    .button-reservation {
+                        padding: 1rem;
+                        margin-top: 2rem;
+                        font-size: 22px;
+                        font-weight: 700;
+                        background-color: var(--main-color);
+                        color: var(--text-color);
+                        border: none;
+                        border-radius: .3rem;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: var(--third-color);
+                            transition: .3s ease;
+                        }
+                    }
+
+                    .info-logement {
+                        border: 2px solid var(--third-color);
+                        color: var(--main-color);
+                        padding: .5rem;
+                        border-radius: .5rem;
+
+                        .info {
+                            display: flex;
+                            align-items: center;
+                            gap: .3rem;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.MuiBox-root {
+    padding: 2rem;
+    .loc {
+        color: var(--third-color);
+        font-size: 18px;
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .validation {
+        color: var(--main-color);
+        font-size: 20px;
+        font-weight: 600;
+
+        &.validate {
+            font-weight: 400;
+        }
+    }
+
+    .button-validation {
+        display: flex;
+        justify-content: space-around;
+    } 
+}
